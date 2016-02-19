@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Volkhov:700italic' rel='stylesheet' type='text/css'>
+    <style>
+                .head {
+                    background-color: dodgerblue;
+                    width: 80%;
+                    margin-left: 10%;
+                    /*height:100%;*/
+                    /*background-size:cover;*/
+                    padding: 10% 0% 10% 0%;
+                    text-align: center;
+                }
+
+                body {
+                    background-color: white !important;
+                    padding: 70px;
+                    font-family: 'Volkhov', serif;
+                    //color:dodgerblue;
+                }
+
+                .navbar {
+                    background-color: white !important;
+                   // height: 70px;
+                }
+
+                .jumbotron {
+                    background-color: transparent !important;
+                }
+
+                .footer {
+                    height: 20px;
+                    margin-bottom: 0%;
+                    text-align: center;
+                    padding-top: 10%;
+                }
+
+                .resume {
+                    width: 20%;
+                    left: 38%;
+                    margin-top: 5%;
+                    position: relative;
+                    border: 2px solid black;
+                }
+
+                .portfolio {
+                    width: 80%;
+                    height: 50%;
+                    display: table;
+                    padding: 10% 0% 0% 0%;
+                    margin-left: 10%;
+                    /*border-bottom-width:2px;
+                   border-bottom-style:solid;
+                   border-bottom-color:dodgerblue;*/
+                }
+
+                .profile {
+                    width: 80%;
+                    height: 50%;
+                    display: table;
+                    padding: 0% 0% 0% 0%;
+                    margin-left: 10%;
+                    /*border-bottom-width:2px;
+                   border-bottom-style:solid;
+                   border-bottom-color:dodgerblue;*/
+                    text-align: center;
+                }
+
+                .contact {
+                    width: 80%;
+                    height: 50%;
+                    display: table;
+                    padding: 10% 0% 10% 0%;
+                    margin-left: 10%;
+                    /*border-bottom-width:2px;
+                   border-bottom-style:solid;
+                   border-bottom-color:dodgerblue;*/
+                }
+
+                .thought {
+                    // background-image:url(holstee_7things.jpg);
+                    background-size: cover;
+                }
+
+
+
+
+                /*#menu-container {
+
+            display: inline;
+            width:100%;
+            margin:0px;
+        }*/
+                .menu-left ul {
+                    /*margin: 10%;
+            padding:0;
+            font-size: 17px;
+            width: 100%;*/
+                    width: 60%;
+                    float: left;
+                    margin: 3.125rem auto 4.0625rem auto;
+                    text-align: center;
+                    font-size: 3.3125rem;
+                    font-weight: 100;
+                    margin-left: 28%;
+                }
+
+                    .menu-left ul li {
+                        /*vertical-align: top;
+            width: 10%;*/
+                        float: left;
+                        display: inline;
+                        line-height: 1.3;
+                        color: crimson;
+                    }
+
+                        .menu-left ul li a {
+                            color: crimson;
+                            //text-decoration:none;
+                            transition: color 0.3s ease;
+                            /*outline: none;*/
+                            padding: 5px 0 0 8px;
+                            /*display: inline;
+            //background: rgb(50,153,187);
+
+            text-align:center;*/
+                        }
+
+                            .menu-left ul li a:active,
+                            .menu-left ul li a:hover {
+                                //background: rgba(50,153,187,0.8);
+                            }
+
+                header {
+                    width: 80%;
+                    height: 50%;
+                    display: table;
+                    padding: 8% 0% 0% 0%;
+                    margin-left: 10%;
+                }
+
+                footer {
+                    width: 80%;
+                    //height:50%;
+                    display: table;
+                    // box-sizing: border-box;
+                    // padding: 0px 1.25rem;
+                    margin-left: 10%;
+                }
+
+                hr {
+                    width: 100%;
+                    border-color: dodgerblue;
+                }
+    </style>
+    <script>
+        function goToByScroll(id) {
+            $('html,body').animate({
+                scrollTop: $(id).offset().top
+            }, '1000');
+        }
+
+        $("#bar > ul > li > a").click(function (e) {
+            // Prevent a page reload when a link is pressed
+            e.preventDefault();
+            // Call the scroll function
+            goToByScroll($(this).attr("href"));
+        });
+    </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-3" id="bar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#head">HOME <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#profile">PROFILE</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="head" id="head">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-3">
+                <div style="padding-left:55px">
+
+                    <h1 class="left">Hello There!!</h1>
+                    <img src="download.png" class="img-responsive" style="width:310px" />
+
+                    <h1>Shivika Vashisht</h1>
+                    <h2>Glad you came.</h2>
+                    <img src="left1.png" class="img-responsive pull-right" style="height:50px" />
+                </div>
+
+            </div>
+
+        </div>
+        <div class="resume">
+            <button class="btn btn-block" style="background-color:dodgerblue !important; font-weight:bold !important"> <h4>Interactive Resume</h4></button>
+
+        </div>
+    </div>
+    <header id="profile">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Shivika <em>is&#8230;</em></h1>
+            </div>
+            <div class="col-md-9">
+                <hr style="margin-top:7%;" />
+            </div>
+        </div>
+    </header>
+    <div class="profile">
+        <div id="menu-container">
+            <div class="menu-left">
+                <ul id="menu-principal" class="menu">
+                    <li><a id="thinking" href="/thinking/drucker.html" style="color:gold">thinking</a>, </li>
+                    <li><a id="reading" href="/reading/publishing.html"> reading</a>, </li>
+                    <br />
+                    <li><a id="collecting" href="http://blog.tanmade.com"> collecting</a>, </li>
+                    <li><a id="designing" href="/designing" style="color:orangered"> designing</a>, </li>
+                    <br />
+                    <li><a id="editing" href="/editing" style="color:dodgerblue"> editing</a>, </li>
+                    <li><a id="writing" href="/writing"> writing</a>, </li>
+                    <li><a id="making" href="/making/mnemosyne.html"> making</a>, </li>
+                    <br />
+                    <li>and <a id="playing" href="/bio.html" style="color:forestgreen">playing around.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-8">
+                <hr />
+            </div>
+            <div class="col-md-4">
+                <p>in Mangalore, Karnataka. <a href="/bio.html">+More about me?</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h3 style="margin-left:35%; margin-bottom:15%">Projects</h3>
+            <div class="row" style="width:80%">
+                <div class="col-md-3 col-md-offset-1"><img src="ecommerce.jpg" class="img-responsive img-rounded" width="400" height="200" /></div>
+                <div class="col-md-3 col-md-offset-1"><img src="3-Python-IDLE-name.gif" class="img-rounded img-responsive" width="400" height="200" /></div>
+                <div class="col-md-3 col-md-offset-1"><img src="product-development-using-java.jpg" class="img-rounded img-responsive" width="400" height="200" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <h3 style="margin-left:35%;  margin-bottom:15%">Drop a Line</h3>
+            <div class="row" style="width:80%">
+                <div class="col-md-2 col-md-offset-1"><img src="twitter-icon.png" class="img-responsive img-circle" width="100" /></div>
+                <div class="col-md-2 col-md-offset-1"><img src="9611.png" class="img-circle img-responsive" width="100" /></div>
+                <div class="col-md-2 col-md-offset-1"><img src="9612.png" class="img-circle img-responsive" width="100" /></div>
+                <div class="col-md-2 col-md-offset-1"><img src="facebook1.png" class="img-circle img-responsive" width="100" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="thought">
+        <img src=" yourstory-Change-your-life-with-the-power-of-thoughts.jpg" class="img-responsive" style="background-size:cover" width="100%" />
+    </div>
+    <footer class="footer">
+        <p class="text-muted text-info">All Content Copyright <i class="fa fa-copyright"></i> Shivika Vashisht 2016</p>
+    </footer>
+    <script src="Scripts/jquery-2.2.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
